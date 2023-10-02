@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="22.2.4.0" Ref="0" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="Report2" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="22.2" Font="Arial, 9.75pt">
+  <Bands>
+    <Item1 Ref="1" ControlType="TopMarginBand" Name="TopMargin" />
+    <Item2 Ref="2" ControlType="DetailBand" Name="Detail" HeightF="25">
+      <Controls>
+        <Item1 Ref="3" ControlType="XRTable" Name="table1" SizeF="627,25" LocationFloat="0,0" Padding="2,2,0,0,96">
+          <Rows>
+            <Item1 Ref="4" ControlType="XRTableRow" Name="tableRow1" Weight="1">
+              <Cells>
+                <Item1 Ref="5" ControlType="XRTableCell" Name="tableCell1" Weight="1.3585680420973751" Multiline="true" Borders="Bottom">
+                  <ExpressionBindings>
+                    <Item1 Ref="6" EventName="BeforePrint" PropertyName="Text" Expression="[IssueDate]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="7" UseBorders="false" />
+                </Item1>
+                <Item2 Ref="8" ControlType="XRTableCell" Name="tableCell2" Weight="2.73687186601291" TextFormatString="{0:f2}" Multiline="true" TextAlignment="TopRight" Borders="Bottom">
+                  <ExpressionBindings>
+                    <Item1 Ref="9" EventName="BeforePrint" PropertyName="Text" Expression="[TotalNet]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="10" UseBorders="false" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="11" ControlType="XRTableCell" Name="tableCell3" Weight="2.6843555721949386" TextFormatString="{0:f2}" Multiline="true" TextAlignment="TopRight" Borders="Bottom">
+                  <ExpressionBindings>
+                    <Item1 Ref="12" EventName="BeforePrint" PropertyName="Text" Expression="[TotalGross]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="13" UseBorders="false" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="14" ControlType="XRTableCell" Name="tableCell4" Weight="1.7497879547533683" Multiline="true" Borders="Bottom">
+                  <ExpressionBindings>
+                    <Item1 Ref="15" EventName="BeforePrint" PropertyName="Text" Expression="[Currency]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="16" UseBorders="false" />
+                </Item4>
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item2>
+    <Item3 Ref="17" ControlType="BottomMarginBand" Name="BottomMargin">
+      <Controls>
+        <Item1 Ref="18" ControlType="XRPageInfo" Name="pageInfo1" TextFormatString="Page {0}/{1}" TextAlignment="TopRight" SizeF="100,23" LocationFloat="527.00006,67.00001" Padding="2,2,0,0,100">
+          <StylePriority Ref="19" UseTextAlignment="false" />
+        </Item1>
+      </Controls>
+    </Item3>
+    <Item4 Ref="20" ControlType="PageHeaderBand" Name="PageHeader" HeightF="27.083334">
+      <Controls>
+        <Item1 Ref="21" ControlType="XRTable" Name="table2" SizeF="627.00006,25" LocationFloat="0,0" Padding="2,2,0,0,96">
+          <Rows>
+            <Item1 Ref="22" ControlType="XRTableRow" Name="tableRow2" Weight="1">
+              <Cells>
+                <Item1 Ref="23" ControlType="XRTableCell" Name="tableCell5" Weight="0.6371086510365414" Multiline="true" Text="PERIOD&#xD;&#xA;" TextAlignment="TopCenter" Font="Arial, 12pt, style=Bold">
+                  <StylePriority Ref="24" UseFont="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="25" ControlType="XRTableCell" Name="tableCell6" Weight="1.2834725476646074" Multiline="true" Text="TOTAL NET" TextAlignment="TopCenter" Font="Arial, 12pt, style=Bold">
+                  <StylePriority Ref="26" UseFont="false" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="27" ControlType="XRTableCell" Name="tableCell7" Weight="1.2588446211532645" Multiline="true" Text="TOTAL GROSS" TextAlignment="TopCenter" Font="Arial, 12pt, style=Bold">
+                  <StylePriority Ref="28" UseFont="false" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="29" ControlType="XRTableCell" Name="tableCell8" Weight="0.8205741801455868" Multiline="true" Text="CURRENCY" TextAlignment="TopCenter" Font="Arial, 12pt, style=Bold">
+                  <StylePriority Ref="30" UseFont="false" UseTextAlignment="false" />
+                </Item4>
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item4>
+    <Item5 Ref="31" ControlType="ReportHeaderBand" Name="ReportHeader" HeightF="39.583332">
+      <Controls>
+        <Item1 Ref="32" ControlType="XRLabel" Name="label1" Multiline="true" AutoWidth="true" Text="Sum of net and gris invoices on a monthly basis" SizeF="627.00006,35.500034" LocationFloat="0,0" Font="Arial, 20pt" Padding="2,2,0,0,100">
+          <StylePriority Ref="33" UseFont="false" />
+        </Item1>
+      </Controls>
+    </Item5>
+  </Bands>
+  <ComponentStorage>
+    <Item1 Ref="34" ObjectType="DevExpress.DataAccess.ObjectBinding.ObjectDataSource,DevExpress.DataAccess.v22.2" Name="objectDataSource1" Base64="PE9iamVjdERhdGFTb3VyY2UgTmFtZT0ib2JqZWN0RGF0YVNvdXJjZTEiPjxEYXRhU291cmNlIFR5cGU9IlBsYXRpZ2VJbWFnZS5WaWV3LlZpZXdNb2RlbHMuUmVwb3J0cy5JbnZvaWNlc05ldEdyb3NzQnlNb250aCwgUGxhdGlnZUltYWdlLlZpZXcsIFZlcnNpb249MS4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsIiAvPjxEYXRhTWVtYmVyPkludm9pY2VzTmV0R3Jvc3NzPC9EYXRhTWVtYmVyPjwvT2JqZWN0RGF0YVNvdXJjZT4=" />
+  </ComponentStorage>
+</XtraReportsLayoutSerializer>
